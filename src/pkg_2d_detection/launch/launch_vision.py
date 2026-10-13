@@ -6,7 +6,7 @@ from launch.substitutions import LaunchConfiguration
 def generate_launch_description():
     image_topic_arg = DeclareLaunchArgument(
         'image_topic',
-        default_value='/camera/image_raw',
+        default_value='/image_raw',
         description='Topic name for the input image'
     )
 
@@ -36,7 +36,7 @@ def generate_launch_description():
             {'video_device': '/dev/video0'},
             {'image_width': 640},
             {'image_height': 480},
-            {'pixel_format': 'yuyv'},
+            {'pixel_format': 'yuyv2rgb'},
         ],
         output='screen'
     )

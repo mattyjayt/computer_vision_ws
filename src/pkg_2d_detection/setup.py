@@ -16,10 +16,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='kleya',
-    maintainer_email='kleya@todo.todo',
+    maintainer='Jaime Tellie',
+    maintainer_email='jaime.tellie@gmail.com',
     description='TODO: Package description',
-    license='TODO: License declaration',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',
